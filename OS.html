@@ -1,0 +1,170 @@
+<html>
+<body>
+<style>
+h2{
+font-family:monospace;
+}
+p{
+font-family:cursive;
+}
+#os{
+color:brown;
+text-align:center; 
+}
+li{
+font-family:serif;
+}
+#home{
+color:black;
+font-size:27px;
+}
+#types{
+color:black;
+font-size:27px;
+}
+#services{
+color:black;
+font-size:27px;
+}
+#t1{
+
+vertical-align:text-top;
+grid-area: navbar;
+ width:300px;
+height:1000px;
+font-size:20px;
+
+ background-attachment: fixed;
+  background-size: 50% 100%;
+ }
+#t2{
+grid-area:navbar;
+
+background-color:white;
+width:1050px;
+
+}
+.lef a{
+text-decoration: none;
+color:black;
+border: 1px solid black;
+padding: 8px;
+  margin: 10px 0;
+}
+
+</style>
+<table>
+<tr>
+<td id="t1" class="lef" style="width:300px">
+
+<header>Operating System</header><br>
+<ul>
+<li ><a href="#home">Home</a></li><br>
+<li ><a href="#types">Types</a></li><br>
+<li ><a href="#services">Services</a></li><br>
+<li ><a href="https://www.tutorialspoint.com/operating_system/index.htm">More</a></li>
+</ul>
+
+</td>
+
+<td id="t2" style="width:1050px">
+
+<h1 id="os"><strong>OPERATING SYSTEM</strong></h1>
+<h2 id="home">HOME</h2>
+<p>An operating system (OS) is a collection of software that manages computer hardware resources and provides common services for computer programs. The operating system is a vital component of the system software in a computer system. This tutorial will take you through step by step approach while learning Operating System concepts.</p>
+<h4>Why to Learn Operating System?</h4>
+<p>An Operating System (OS) is an interface between a computer user and computer hardware. An operating system is a software which performs all the basic tasks like file management, memory management, process management, handling input and output, and controlling peripheral devices such as disk drives and printers.
+<br>Some popular Operating Systems include Linux Operating System, Windows Operating System, VMS, OS/400, AIX, z/OS, etc.
+
+<br>Following are some of important functions of an operating System.</p>
+<ul>
+<li>Memory Management</li>
+<li>Processor Management</li>
+<li>Device Management</li>
+<li>File Management</li>
+<li>Security</li>
+<li>Control over system performance</li>
+<li>Job accounting</li>
+<li>Error detecting aids</li>
+<li>Coordination between other software and users</li>
+</ul>
+<h4>Applications of Operating System</h4>
+<p>Following are some of the important activities that an Operating System performs −
+
+Security − By means of password and similar other techniques, it prevents unauthorized access to programs and data.
+
+Control over system performance − Recording delays between request for a service and response from the system.
+
+Job accounting − Keeping track of time and resources used by various jobs and users.
+
+Error detecting aids − Production of dumps, traces, error messages, and other debugging and error detecting aids.
+
+Coordination between other softwares and users − Coordination and assignment of compilers, interpreters, assemblers and other software to the various users of the computer systems.</p>
+<h2 id="types">types</h2>
+<h3>Batch operating system</h3>
+<p>The users of a batch operating system do not interact with the computer directly. Each user prepares his job on an off-line device like punch cards and submits it to the computer operator. To speed up processing, jobs with similar needs are batched together and run as a group. The programmers leave their programs with the operator and the operator then sorts the programs with similar requirements into batches.
+<br>The problems with Batch Systems are as follows −</p>
+<ul>
+<li>Lack of interaction between the user and the job.</li>
+<li>CPU is often idle, because the speed of the mechanical I/O devices is slower than the CPU.</li>
+<li>Difficult to provide the desired priority.</li>
+</ul>
+<h3>Time-sharing operating systems</h3>
+<p>Time-sharing is a technique which enables many people, located at various terminals, to use a particular computer system at the same time. Time-sharing or multitasking is a logical extension of multiprogramming. Processor's time which is shared among multiple users simultaneously is termed as time-sharing.
+
+<br><br>The main difference between Multiprogrammed Batch Systems and Time-Sharing Systems is that in case of Multiprogrammed batch systems, the objective is to maximize processor use, whereas in Time-Sharing Systems, the objective is to minimize response time.
+
+<br><br>Multiple jobs are executed by the CPU by switching between them, but the switches occur so frequently. Thus, the user can receive an immediate response. For example, in a transaction processing, the processor executes each user program in a short burst or quantum of computation. That is, if n users are present, then each user can get a time quantum. When the user submits the command, the response time is in few seconds at most.
+
+<br><br>The operating system uses CPU scheduling and multiprogramming to provide each user with a small portion of a time. Computer systems that were designed primarily as batch systems have been modified to time-sharing systems.
+
+<br><br>Advantages of Timesharing operating systems are as follows −</p>
+<ul>
+<li>Provides the advantage of quick response.</li>
+<li>Avoids duplication of software.</li>
+<li>Reduces CPU idle time.</li>
+</ul>
+<a href='https://www.tutorialspoint.com/operating_system/os_types.htm'>for more</a>
+<h2 id="services">services</h2>
+<p>An Operating System provides services to both the users and to the programs.<br>
+<ul>
+<li>It provides programs an environment to execute.</li>
+<li>It provides users the services to execute the programs in a convenient manner.</li>
+</ul>
+<br><br>Following are a few common services provided by an operating system −</p>
+<li>Program execution</li>
+<li>I/O operations</li>
+<li>File System manipulation</li>
+<li>Communication</li>
+<li>Error Detection</li>
+<li>Resource Allocation</li>
+<li>Protection</li>
+</ul>
+<h3>Program execution</h3>
+<p>Operating systems handle many kinds of activities from user programs to system programs like printer spooler, name servers, file server, etc. Each of these activities is encapsulated as a process.
+
+<br><br>A process includes the complete execution context (code to execute, data to manipulate, registers, OS resources in use). Following are the major activities of an operating system with respect to program management −</p>
+<ul>
+<li>Loads a program into memory.</li>
+<li>Executes the program.</li>
+<li>Handles program's execution.</li>
+<li>Provides a mechanism for process synchronization.</li>
+<li>Provides a mechanism for process communication</li>
+<li>Provides a mechanism for deadlock handling.</li>
+</ul>
+<h3>I/O Operation</h3>
+<p>An I/O subsystem comprises of I/O devices and their corresponding driver software. Drivers hide the peculiarities of specific hardware devices from the users.
+
+<br><br>An Operating System manages the communication between user and device drivers.</p>
+<ul>
+<li>I/O operation means read or write operation with any file or any specific I/O device.</li>
+<li>Operating system provides the access to the required I/O device when required.</li>
+</ul>
+
+<p>if you want to read more about Operating System <a href='https://www.tutorialspoint.com/operating_system/index.htm'> click here</a></p>
+</td>
+</tr>
+</table>
+
+</body>
+</html>
